@@ -54,7 +54,7 @@ public abstract class BaseActivity extends AppCompatActivity {
      * @param value
      */
     public void showToast(String value){
-        Toast.makeText(this, value, Toast.LENGTH_LONG);
+        Toast.makeText(this, value, Toast.LENGTH_LONG).show();
     }
 
 
