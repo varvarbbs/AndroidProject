@@ -23,4 +23,8 @@ import org.androidannotations.annotations.EFragment;
 @EFragment(R.layout.fragment_demo_framgent_second)
 public class DemoFramgentSecond extends BaseFragment {
 
+    @Override
+    protected void onRightButtonClick() {
+
+    }
 }
