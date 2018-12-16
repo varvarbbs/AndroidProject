@@ -67,7 +67,6 @@ public class DemoLoginActivity extends BaseActivity {
             app.getDaoSession().getDemoLoginModelDao().update(entity);
         }
 
-        Intent intent = new Intent(DemoLoginActivity.this, DemoMainActivity_.class);
-        this.startActivity(intent);
+        DemoMainActivity_.intent(this).start();
     }
 }

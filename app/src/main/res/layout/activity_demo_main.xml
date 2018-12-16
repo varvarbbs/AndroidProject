@@ -7,4 +7,42 @@
         android:layout_height="match_parent"
         tools:context="com.kun.demo.DemoMainActivity">
 
+    <android.support.v7.widget.LinearLayoutCompat
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:divider="@drawable/line"
+            app:showDividers="middle">
+
+        <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+        </FrameLayout>
+
+        <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+            <com.kun.androidproject.base.TabbarMenu_
+                    android:id="@+id/firstMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+            </com.kun.androidproject.base.TabbarMenu_>
+
+
+            <com.kun.androidproject.base.TabbarMenu_
+                    android:id="@+id/secondMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+            </com.kun.androidproject.base.TabbarMenu_>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
 </android.support.constraint.ConstraintLayout>
