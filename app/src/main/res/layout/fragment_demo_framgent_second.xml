@@ -4,10 +4,25 @@
              android:layout_height="match_parent"
              tools:context="com.kun.demo.DemoFramgentSecond">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.kun.androidproject.base.NavigationBarView_
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/barView"
+                android:layout_alignParentTop="true">
+        </com.kun.androidproject.base.NavigationBarView_>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/smartRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/barView">
+            <ListView android:id="@+id/listView"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+
+            </ListView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </RelativeLayout>
 
 </FrameLayout>
